@@ -30,6 +30,9 @@ function blogPost (event) {
         const jsonArray2 = JSON.stringify(firstArray);
         localStorage.setItem('posts', jsonArray2);
     }
+
+    var myWindow = window.open("../../blog.html", "_self");
+    myWindow();
     
 }
 
