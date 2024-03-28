@@ -56,7 +56,7 @@ function blogPost (event) {
         localStorage.setItem('posts', jsonArray2);
     }
 
-    var myWindow = window.open("../../blog.html", "_self");
+    var myWindow = window.open("/blog.html", "_self");
     myWindow();
     
 }
