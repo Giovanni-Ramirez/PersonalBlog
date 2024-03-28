@@ -56,9 +56,8 @@ function blogPost (event) {
         localStorage.setItem('posts', jsonArray2);
     }
 
-    var myWindow = window.open("/blog.html", "_self");
-    myWindow();
-    
+    var myWindow = window.open("blog.html", "_self");
+    myWindow
 }
 
 // !!!Need to add a funciton to call when submitt
