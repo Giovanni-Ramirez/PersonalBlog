@@ -1,5 +1,30 @@
 const submitForm = document.querySelector("#formSubmit");
 
+function checkInputs (event) {
+    let formIsValid = true;
+    const inputs = submitForm.querySelectorAll('input');
+    const fillInputs = document.querySelector('#fillInputs');
+
+    inputs.forEach(input => {
+        if (input.value.trim() === '') {
+            formIsValid = false;
+        } else {
+            formIsValid = true;
+        }
+    })
+
+    if (formIsValid === false) {
+        event.preventDefault();
+        fillInputs.textContent = 'Please enter a value in all fields';
+    } else {
+        event.preventDefault();
+        fillInputs.textContent = '';
+        blogPost(event);
+    }
+};
+
+
+
 
 function blogPost (event) {
     event.preventDefault();
@@ -37,7 +62,9 @@ function blogPost (event) {
 }
 
 // !!!Need to add a funciton to call when submitt
-submitForm.addEventListener("submit", blogPost);
+submitForm.addEventListener("submit", checkInputs);
+
+
 
 
 // DarkLightMode 
