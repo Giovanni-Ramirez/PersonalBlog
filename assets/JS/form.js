@@ -38,3 +38,20 @@ function blogPost (event) {
 
 // !!!Need to add a funciton to call when submitt
 submitForm.addEventListener("submit", blogPost);
+
+
+// DarkLightMode 
+const darkLightMode = document.querySelector('#darkLightMode');
+const bodyLD = document.querySelector('body');
+
+let mode = 'dark';
+
+darkLightMode.addEventListener('click', function() {
+    if (mode === 'dark'){
+        mode = 'light';
+        bodyLD.setAttribute('class', 'light');
+    } else {
+        mode = 'dark';
+        bodyLD.setAttribute('class', 'dark');
+    }
+});
