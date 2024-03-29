@@ -2,7 +2,7 @@
 
 ## Description
 
-This Allows you to fill out a form to make a blog post.
+This Allows you to fill out a form to make a blog post and has dark and light mode.
 
 ## Link to page
 
@@ -16,4 +16,6 @@ This Allows you to fill out a form to make a blog post.
 
 ## Screen shot
 
-![](screenShot.png)
+![](/assets/images/submitBlogForm.PNG)
+
+![](/assets/images/blogPage.PNG)
